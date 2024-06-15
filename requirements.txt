@@ -7,3 +7,4 @@ regex
 nltk
 underthesea
 wordcloud
+openpyxl
