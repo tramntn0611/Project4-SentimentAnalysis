@@ -20,6 +20,11 @@ from underthesea import word_tokenize, pos_tag, sent_tokenize
 from wordcloud import WordCloud
 
 nltk.download('punkt')
+try:
+    import openpyxl
+except ImportError:
+    print("openpyxl is not installed or cannot be imported.")
+    raise
 
 
 #Text Processing
