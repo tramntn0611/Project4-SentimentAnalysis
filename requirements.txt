@@ -1,0 +1,11 @@
+streamlit
+numpy
+pandas
+matplotlib
+seaborn
+pickle
+regex
+re
+nltk
+underthesea
+wordcloud
