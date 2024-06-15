@@ -340,6 +340,13 @@ elif choice == 'Model':
     with right_column6:
         st.subheader('Dicission Tree-OverRandomSampler')
         st.image('DT-O.JPG')
+    st.subheader('- Qua các kết quả đánh giá trên tập Test thấy được mô hình:')
+    st.subheader('- LR_Over_2 (Logistic Regression với phương pháp Over-sampling (RandomOverSampling)) đem lại kết quả tốt nhất')
+    st.subheader('- Chỉ số Recall, Precision đều khá cao (0.7 ~ 0.8), F1-Score trên 0.8, AUC đạt 0.8976')
+    st.subheader('- Hơn nữa so sánh trực quan Cofusion Matrix cho thấy nhãn Positive và Negative dự đoán được tốt nhất trong tất cả các mô hình trên')
+    st.subheader('- Do đó ta sẽ chọn Mô hình Logistic Regression RandomOverSampling để dự đoán trên toàn bộ dữ liệu')
+
+
 
 elif choice == 'Sentiment Analysis':
     st.title("🙂😐😠 Predict Sentiment")
