@@ -52,7 +52,7 @@ with open('english-vnmese.txt', 'r', encoding="utf8") as file:
 
 ################
 #LOAD wrong words
-with open('/wrong-word.txt', 'r', encoding="utf8") as file:  
+with open('wrong-word.txt', 'r', encoding="utf8") as file:  
     wrong_lst = file.read().split('\n')
 
 #################
