@@ -18,8 +18,6 @@ import nltk
 from nltk.tokenize import sent_tokenize
 from underthesea import word_tokenize, pos_tag, sent_tokenize
 from wordcloud import WordCloud
-import openpyxl
-
 
 nltk.download('punkt')
 
