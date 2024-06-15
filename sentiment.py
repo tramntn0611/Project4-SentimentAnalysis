@@ -24,7 +24,7 @@ nltk.download('punkt')
 
 #Text Processing
 ##LOAD EMOJICON
-with open('files/emojicon.txt', 'r', encoding="utf8") as file:  
+with open('emojicon.txt', 'r', encoding="utf8") as file:  
     emoji_lst = file.read().split('\n')
     emoji_dict = {}
     for line in emoji_lst:
@@ -33,7 +33,7 @@ with open('files/emojicon.txt', 'r', encoding="utf8") as file:
 
 #################
 #LOAD TEENCODE
-with open('files/teencode.txt', 'r', encoding="utf8") as file:  
+with open('teencode.txt', 'r', encoding="utf8") as file:  
     teen_lst = file.read().split('\n')
     teen_dict = {}
     for line in teen_lst:
@@ -51,12 +51,12 @@ with open('files/english-vnmese.txt', 'r', encoding="utf8") as file:
 
 ################
 #LOAD wrong words
-with open('files/wrong-word.txt', 'r', encoding="utf8") as file:  
+with open('wrong-word.txt', 'r', encoding="utf8") as file:  
     wrong_lst = file.read().split('\n')
 
 #################
 #LOAD STOPWORDS
-with open('files/vietnamese-stopwords.txt', 'r', encoding="utf8") as file:  
+with open('vietnamese-stopwords.txt', 'r', encoding="utf8") as file:  
     stopwords_lst = file.read().split('\n')
   
 
