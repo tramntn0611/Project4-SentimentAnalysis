@@ -17,14 +17,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import nltk
 from nltk.tokenize import sent_tokenize
 from underthesea import word_tokenize, pos_tag, sent_tokenize
-from wordcloud import WordCloud
+
 
 nltk.download('punkt')
-try:
-    import openpyxl
-except ImportError:
-    print("openpyxl is not installed or cannot be imported.")
-    raise
 
 
 #Text Processing
@@ -383,12 +378,12 @@ elif choice == 'Sentiment Analysis':
     st.subheader("Upload File")
     with st.form(key='dfform'):
         # Upload file
-        uploaded_file = st.file_uploader("Choose a file", type=['xlsx'])
+        uploaded_file = st.file_uploader("Choose a file", type=['csv'])
         submit_button = st.form_submit_button(label = 'Analyze')
 
         if uploaded_file is not None:
             st.markdown('---')
-            df = pd.read_excel(uploaded_file, header=None, engine='openpyxl')
+            df = pd.read_csv(uploaded_file, header=None,)
             st.markdown('Users comments')
             st.dataframe(df)
             # st.write(lines.columns)
