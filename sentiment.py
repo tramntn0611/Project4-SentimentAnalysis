@@ -262,7 +262,7 @@ st.set_page_config(page_title='Sentiment Analysis', page_icon='📊', layout="wi
 menu = ["Business Objective", "Data Review", "Model", "Sentiment Analysis", "Restaurant Information"]
 choice = st.sidebar.selectbox('Menu', menu)
 if choice == 'Business Objective': 
-    st.title("Project 4:
+    st.title("Project 4")
     st.subheader("Nguyễn Thị Ngọc Trâm - Đào Mình Trí")
     st.title("🙂😐😠 Sentiment Analysis")
     st.subheader(" Sentiment Analysis là quá trình phân tích, đánh giá quan điểm của một người về một đối tượng nào đó (quan điểm mang tính tích cực, tiêu cực, hay trung tính,..). Quá trình này có thể thực hiện bằng việc sử dụng các tập luật (rule-based), sử dụng  Machine Learning hoặc phương pháp Hybrid (kết hợp hai  phương pháp trên).")  
