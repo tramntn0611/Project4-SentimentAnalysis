@@ -42,7 +42,7 @@ with open('teencode.txt', 'r', encoding="utf8") as file:
 
 ###############
 #LOAD TRANSLATE ENGLISH -> VNMESE
-with open('files/english-vnmese.txt', 'r', encoding="utf8") as file:  
+with open('english-vnmese.txt', 'r', encoding="utf8") as file:  
     english_lst = file.read().split('\n')
     english_dict = {}
     for line in english_lst:
